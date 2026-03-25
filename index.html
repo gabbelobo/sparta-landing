@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sparta Fitness</title>
+    <meta
+      name="description"
+      content="Sparta Fitness - Train together, compete forever. Track workouts, challenge friends, and climb the leaderboard."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top">
+          <img
+            src="sparta-logo.svg"
+            alt="Sparta Fitness"
+            width="36"
+            height="36"
+          />
+          <span>SPARTA</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#leaderboard">Leaderboard</a>
+          <a href="#workouts">Workouts</a>
+        </nav>
+        <div class="nav-actions">
+          <a class="btn primary" href="#">Get Started</a>
+        </div>
+        <button
+          class="mobile-toggle"
+          type="button"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <i
+            data-lucide="menu"
+            class="lucide-icon icon-lg icon-menu"
+            aria-hidden="true"
+          ></i>
+          <i
+            data-lucide="x"
+            class="lucide-icon icon-lg icon-close"
+            aria-hidden="true"
+          ></i>
+        </button>
+      </div>
+      <div id="mobile-menu" class="container mobile-menu">
+        <nav aria-label="Mobile navigation">
+          <a href="#features">Features</a>
+          <a href="#leaderboard">Leaderboard</a>
+          <a href="#workouts">Workouts</a>
+        </nav>
+        <div class="mobile-actions">
+          <a class="btn primary" href="#">Get Started</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-grid-overlay">
+        <div class="container hero-content">
+          <div class="pill status-pill">
+            <span class="pulse" aria-hidden="true"></span>
+            Now available on iOS &amp; Android
+          </div>
+
+          <h1>
+            <span>Train Together,</span>
+            <br />
+            <span class="text-primary">Compete Forever</span>
+          </h1>
+
+          <p>
+            The social fitness app that transforms your workouts into friendly
+            competition. Track your gym sessions, challenge your friends, and
+            watch your progress soar.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary lg" href="#">
+              Start Training Free
+              <i
+                data-lucide="arrow-right"
+                class="lucide-icon"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a class="btn outline lg" href="#">
+              <i data-lucide="play" class="lucide-icon" aria-hidden="true"></i>
+              Watch Demo
+            </a>
+          </div>
+
+          <div class="social-proof">
+            <div class="avatars" aria-label="Athlete avatars">
+              <span>A</span>
+              <span>B</span>
+              <span>C</span>
+              <span>D</span>
+              <span>E</span>
+            </div>
+            <div><strong>50,000+</strong> athletes already training</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section section-glow-bottom">
+        <div class="container">
+          <div class="section-head">
+            <h2>
+              Everything You Need to <span class="text-primary">Dominate</span>
+            </h2>
+            <p>
+              Built by fitness enthusiasts for fitness enthusiasts. Every
+              feature is designed to keep you accountable and your competitive
+              fire burning.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="card">
+              <div class="feature-icon">
+                <i
+                  data-lucide="map-pin"
+                  class="lucide-icon icon-xl"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <h3>Gym Check-ins</h3>
+              <p>
+                Automatically log your gym visits with GPS verification. Build
+                streaks and earn badges for consistency.
+              </p>
+            </article>
+            <article class="card">
+              <div class="feature-icon">
+                <i
+                  data-lucide="users"
+                  class="lucide-icon icon-xl"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <h3>Friend Challenges</h3>
+              <p>
+                Challenge friends to workout competitions. Compare rep counts,
+                duration, and frequency in real-time.
+              </p>
+            </article>
+            <article class="card">
+              <div class="feature-icon">
+                <i
+                  data-lucide="trophy"
+                  class="lucide-icon icon-xl"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <h3>Leaderboards</h3>
+              <p>
+                Climb the ranks on weekly and monthly leaderboards. See how you
+                stack up against your gym buddies.
+              </p>
+            </article>
+            <article class="card">
+              <div class="feature-icon">
+                <i
+                  data-lucide="clipboard-list"
+                  class="lucide-icon icon-xl"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <h3>Workout Plans</h3>
+              <p>
+                Create and follow custom exercise plans. Register your gym
+                routines with sets, reps, and weights.
+              </p>
+            </article>
+            <article class="card">
+              <div class="feature-icon">
+                <i
+                  data-lucide="trending-up"
+                  class="lucide-icon icon-xl"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <h3>Progress Tracking</h3>
+              <p>
+                Track your personal records and strength gains over time. See
+                your improvement on every exercise.
+              </p>
+            </article>
+            <article class="card">
+              <div class="feature-icon">
+                <i
+                  data-lucide="zap"
+                  class="lucide-icon icon-xl"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <h3>Quick Logging</h3>
+              <p>
+                Log workouts in seconds with preset templates. Focus on lifting,
+                not typing.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="leaderboard" class="section">
+        <div class="container split">
+          <div>
+            <div class="section-badge">
+              <i
+                data-lucide="trophy"
+                class="lucide-icon icon-xs"
+                aria-hidden="true"
+              ></i>
+              Competition Mode
+            </div>
+            <h2>Rise Through the <span class="text-primary">Ranks</span></h2>
+            <p class="lead">
+              Nothing motivates like a little friendly competition. See how you
+              stack up against friends on daily, weekly, and monthly
+              leaderboards. Earn bragging rights and keep each other
+              accountable.
+            </p>
+            <div class="stats-row">
+              <div><strong>89%</strong><span>More consistent</span></div>
+              <div><strong>2.4x</strong><span>Workout frequency</span></div>
+              <div><strong>15+</strong><span>Avg. streak days</span></div>
+            </div>
+          </div>
+
+          <aside class="panel">
+            <div class="panel-head">
+              <h3 class="leaderboard-head-title">
+                <i
+                  data-lucide="trophy"
+                  class="lucide-icon leaderboard-head-icon"
+                  aria-hidden="true"
+                ></i>
+                This Month
+              </h3>
+              <span class="tag">Live</span>
+            </div>
+            <ul class="leaderboard-list">
+              <li class="leader top">
+                <span class="rank">1</span>
+                <span class="avatar">AC</span>
+                <span class="identity">
+                  <span class="name">Alex Chen</span>
+                  <span class="sub">18 day streak</span>
+                </span>
+                <span class="score-wrap">
+                  <span class="score">24</span>
+                  <span class="sub">workouts</span>
+                </span>
+                <span class="trend up" aria-label="Trending up">
+                  <i data-lucide="trending-up" class="lucide-icon icon-sm"></i>
+                </span>
+              </li>
+              <li class="leader silver">
+                <span class="rank">2</span>
+                <span class="avatar">SM</span>
+                <span class="identity">
+                  <span class="name">Sarah Miller</span>
+                  <span class="sub">15 day streak</span>
+                </span>
+                <span class="score-wrap">
+                  <span class="score">22</span>
+                  <span class="sub">workouts</span>
+                </span>
+                <span class="trend up" aria-label="Trending up">
+                  <i data-lucide="trending-up" class="lucide-icon icon-sm"></i>
+                </span>
+              </li>
+              <li class="leader bronze">
+                <span class="rank">3</span>
+                <span class="avatar">MJ</span>
+                <span class="identity">
+                  <span class="name">Mike Johnson</span>
+                  <span class="sub">12 day streak</span>
+                </span>
+                <span class="score-wrap">
+                  <span class="score">21</span>
+                  <span class="sub">workouts</span>
+                </span>
+                <span class="trend same" aria-label="No change">
+                  <i data-lucide="minus" class="lucide-icon icon-sm"></i>
+                </span>
+              </li>
+              <li class="leader">
+                <span class="rank">4</span>
+                <span class="avatar">ED</span>
+                <span class="identity">
+                  <span class="name">Emily Davis</span>
+                  <span class="sub">10 day streak</span>
+                </span>
+                <span class="score-wrap">
+                  <span class="score">19</span>
+                  <span class="sub">workouts</span>
+                </span>
+                <span class="trend down" aria-label="Trending down">
+                  <i
+                    data-lucide="trending-down"
+                    class="lucide-icon icon-sm"
+                  ></i>
+                </span>
+              </li>
+              <li class="leader">
+                <span class="rank">5</span>
+                <span class="avatar">CB</span>
+                <span class="identity">
+                  <span class="name">Chris Brown</span>
+                  <span class="sub">8 day streak</span>
+                </span>
+                <span class="score-wrap">
+                  <span class="score">18</span>
+                  <span class="sub">workouts</span>
+                </span>
+                <span class="trend up" aria-label="Trending up">
+                  <i data-lucide="trending-up" class="lucide-icon icon-sm"></i>
+                </span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="workouts" class="section section-glow-center">
+        <div class="container">
+          <div class="section-head">
+            <div class="section-badge">
+              <i
+                data-lucide="dumbbell"
+                class="lucide-icon icon-xs"
+                aria-hidden="true"
+              ></i>
+              Workout Logging
+            </div>
+            <h2>Log Your <span class="text-primary">Workouts</span></h2>
+            <p>
+              Create custom workout plans or use templates. Track every set,
+              rep, and weight to see your progress over time.
+            </p>
+          </div>
+
+          <div class="split">
+            <article class="panel workout-panel">
+              <div class="panel-head stack">
+                <h3>Push Day - Chest &amp; Shoulders</h3>
+                <span class="tag">In Progress</span>
+              </div>
+              <div class="progress-meta">
+                <span>3 of 5 exercises</span><span>60%</span>
+              </div>
+              <div class="progress-bar"><span style="width: 60%"></span></div>
+              <ul class="exercise-list">
+                <li class="done">
+                  <div class="exercise-head">
+                    <span class="exercise-mark" aria-hidden="true">
+                      <i data-lucide="check" class="lucide-icon icon-xs"></i>
+                    </span>
+                    <strong>Bench Press</strong>
+                  </div>
+                  <small>4 sets x 8-10 @ 185 lbs</small>
+                </li>
+                <li class="done">
+                  <div class="exercise-head">
+                    <span class="exercise-mark" aria-hidden="true">
+                      <i data-lucide="check" class="lucide-icon icon-xs"></i>
+                    </span>
+                    <strong>Incline Dumbbell Press</strong>
+                  </div>
+                  <small>3 sets x 10-12 @ 60 lbs</small>
+                </li>
+                <li class="done">
+                  <div class="exercise-head">
+                    <span class="exercise-mark" aria-hidden="true">
+                      <i data-lucide="check" class="lucide-icon icon-xs"></i>
+                    </span>
+                    <strong>Overhead Press</strong>
+                  </div>
+                  <small>4 sets x 8-10 @ 95 lbs</small>
+                </li>
+                <li>
+                  <div class="exercise-head">
+                    <span class="exercise-mark pending" aria-hidden="true">
+                      <i data-lucide="circle" class="lucide-icon icon-xs"></i>
+                    </span>
+                    <strong>Lateral Raises</strong>
+                  </div>
+                  <small>3 sets x 12-15 @ 25 lbs</small>
+                  <a class="btn ghost exercise-log" href="#">Log</a>
+                </li>
+                <li>
+                  <div class="exercise-head">
+                    <span class="exercise-mark pending" aria-hidden="true">
+                      <i data-lucide="circle" class="lucide-icon icon-xs"></i>
+                    </span>
+                    <strong>Tricep Dips</strong>
+                  </div>
+                  <small>3 sets x 10-12 @ BW</small>
+                  <a class="btn ghost exercise-log" href="#">Log</a>
+                </li>
+              </ul>
+            </article>
+
+            <div class="stack-col">
+              <article class="panel templates-panel">
+                <div class="panel-head">
+                  <h3>Your Templates</h3>
+                  <a class="btn ghost" href="#">
+                    <i
+                      data-lucide="plus"
+                      class="lucide-icon icon-xs"
+                      aria-hidden="true"
+                    ></i>
+                    New
+                  </a>
+                </div>
+                <ul class="template-list">
+                  <li>
+                    <span
+                      class="template-color template-primary"
+                      aria-hidden="true"
+                    ></span>
+                    <span>
+                      <strong>Push Day</strong><span>6 exercises · 45 min</span>
+                    </span>
+                    <span class="template-arrow" aria-hidden="true">
+                      <i
+                        data-lucide="chevron-right"
+                        class="lucide-icon icon-sm"
+                      ></i>
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="template-color template-sky"
+                      aria-hidden="true"
+                    ></span>
+                    <span>
+                      <strong>Pull Day</strong><span>5 exercises · 50 min</span>
+                    </span>
+                    <span class="template-arrow" aria-hidden="true">
+                      <i
+                        data-lucide="chevron-right"
+                        class="lucide-icon icon-sm"
+                      ></i>
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      class="template-color template-amber"
+                      aria-hidden="true"
+                    ></span>
+                    <span>
+                      <strong>Leg Day</strong><span>7 exercises · 60 min</span>
+                    </span>
+                    <span class="template-arrow" aria-hidden="true">
+                      <i
+                        data-lucide="chevron-right"
+                        class="lucide-icon icon-sm"
+                      ></i>
+                    </span>
+                  </li>
+                </ul>
+              </article>
+
+              <article class="panel week-panel">
+                <h3>This Week</h3>
+                <div class="stats-cards">
+                  <div>
+                    <span class="stat-icon" aria-hidden="true">
+                      <i data-lucide="flame" class="lucide-icon"></i>
+                    </span>
+                    <strong>5</strong>
+                    <span>Workouts</span>
+                  </div>
+                  <div>
+                    <span class="stat-icon" aria-hidden="true">
+                      <i data-lucide="target" class="lucide-icon"></i>
+                    </span>
+                    <strong>32</strong>
+                    <span>Exercises</span>
+                  </div>
+                  <div>
+                    <span class="stat-icon" aria-hidden="true">
+                      <i data-lucide="calendar" class="lucide-icon"></i>
+                    </span>
+                    <strong>12</strong>
+                    <span>Day Streak</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section cta section-glow-center">
+        <div class="container cta-wrap">
+          <div class="pill cta-badge">
+            <i
+              data-lucide="smartphone"
+              class="lucide-icon icon-xs"
+              aria-hidden="true"
+            ></i>
+            Free to download
+          </div>
+          <h2 class="cta-title">
+            Ready to Join the <span class="text-primary">Battle</span>?
+          </h2>
+          <p class="cta-copy">
+            Download Sparta Fitness today and start competing with friends. Your
+            fitness journey is about to get a lot more exciting.
+          </p>
+          <div class="hero-actions cta-actions">
+            <a class="btn primary lg" href="#">
+              Download for iOS
+              <i
+                data-lucide="arrow-right"
+                class="lucide-icon"
+                aria-hidden="true"
+              ></i>
+            </a>
+            <a class="btn primary lg" href="#">
+              Download for Android
+              <i
+                data-lucide="arrow-right"
+                class="lucide-icon"
+                aria-hidden="true"
+              ></i>
+            </a>
+          </div>
+          <p class="cta-note">
+            No credit card required. Start training in under 60 seconds.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#top">
+            <img
+              src="public/sparta-logo.svg"
+              alt="Sparta Fitness"
+              width="36"
+              height="36"
+            />
+            <span>SPARTA</span>
+          </a>
+          <p class="footer-brand-copy">
+            The social fitness app that turns your workouts into friendly
+            competition. Train together, compete forever.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#leaderboard">Leaderboards</a></li>
+            <li><a href="#workouts">Workouts</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 Sparta Fitness. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+
+      const siteHeader = document.querySelector(".site-header");
+      const mobileToggle = document.querySelector(".mobile-toggle");
+      const mobileMenu = document.querySelector("#mobile-menu");
+      const mobileLinks = document.querySelectorAll(".mobile-menu nav a");
+
+      if (siteHeader && mobileToggle && mobileMenu) {
+        const isDesktop = () => window.innerWidth > 940;
+
+        const closeMenu = () => {
+          siteHeader.classList.remove("is-open");
+          mobileToggle.setAttribute("aria-expanded", "false");
+        };
+
+        mobileToggle.addEventListener("click", () => {
+          const isOpen = siteHeader.classList.toggle("is-open");
+          mobileToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        mobileLinks.forEach((link) => {
+          link.addEventListener("click", closeMenu);
+        });
+
+        window.addEventListener("resize", () => {
+          if (isDesktop()) {
+            closeMenu();
+          }
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!siteHeader.classList.contains("is-open") || isDesktop()) {
+            return;
+          }
+          const target = event.target;
+          if (!(target instanceof Node)) {
+            return;
+          }
+          if (!siteHeader.contains(target)) {
+            closeMenu();
+          }
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            closeMenu();
+          }
+        });
+      }
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
