@@ -14,6 +14,13 @@ const mobileLinks =
 if (siteHeader && mobileToggle && mobileMenu) {
   const isDesktop = () => window.innerWidth > 940;
 
+  const openMenu = () => {
+    siteHeader.classList.add("is-open");
+    mobileToggle.setAttribute("aria-expanded", "true");
+    mobileMenu.setAttribute("aria-hidden", "false");
+    mobileMenu.removeAttribute("inert");
+  };
+
   const closeMenu = () => {
     siteHeader.classList.remove("is-open");
     mobileToggle.setAttribute("aria-expanded", "false");
@@ -22,16 +29,12 @@ if (siteHeader && mobileToggle && mobileMenu) {
   };
 
   mobileToggle.addEventListener("click", () => {
-    const isOpen = siteHeader.classList.toggle("is-open");
-    mobileToggle.setAttribute("aria-expanded", String(isOpen));
-    mobileMenu.setAttribute("aria-hidden", String(!isOpen));
-
-    if (isOpen) {
-      mobileMenu.removeAttribute("inert");
+    if (siteHeader.classList.contains("is-open")) {
+      closeMenu();
       return;
     }
 
-    mobileMenu.setAttribute("inert", "");
+    openMenu();
   });
 
   closeMenu();
