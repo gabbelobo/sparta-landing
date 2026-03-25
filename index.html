@@ -4,10 +4,33 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#141923" />
     <title>Sparta Fitness</title>
     <meta
       name="description"
       content="Sparta Fitness - Train together, compete forever. Track workouts, challenge friends, and climb the leaderboard."
+    />
+    <meta name="author" content="Sparta Fitness" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Sparta Fitness | Train Together, Compete Forever"
+    />
+    <meta
+      property="og:description"
+      content="Track workouts, challenge friends, and climb the leaderboard with Sparta Fitness."
+    />
+    <meta property="og:site_name" content="Sparta Fitness" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Sparta Fitness | Train Together, Compete Forever"
+    />
+    <meta
+      name="twitter:description"
+      content="Track workouts, challenge friends, and climb the leaderboard with Sparta Fitness."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,13 +38,30 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Sparta Fitness",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "iOS, Android",
+        "description": "Social fitness app for tracking workouts, challenging friends, and climbing leaderboards.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
   </head>
   <body>
-    <header class="site-header">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header id="top" class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="#top">
           <img
-            src="sparta-logo.svg"
+            src="/sparta-logo.svg"
             alt="Sparta Fitness"
             width="36"
             height="36"
@@ -55,7 +95,12 @@
           ></i>
         </button>
       </div>
-      <div id="mobile-menu" class="container mobile-menu">
+      <div
+        id="mobile-menu"
+        class="container mobile-menu"
+        aria-hidden="true"
+        inert
+      >
         <nav aria-label="Mobile navigation">
           <a href="#features">Features</a>
           <a href="#leaderboard">Leaderboard</a>
@@ -67,15 +112,15 @@
       </div>
     </header>
 
-    <main id="top">
-      <section class="hero section-grid-overlay">
+    <main id="main-content">
+      <section class="hero section-grid-overlay" aria-labelledby="hero-title">
         <div class="container hero-content">
           <div class="pill status-pill">
             <span class="pulse" aria-hidden="true"></span>
             Now available on iOS &amp; Android
           </div>
 
-          <h1>
+          <h1 id="hero-title">
             <span>Train Together,</span>
             <br />
             <span class="text-primary">Compete Forever</span>
@@ -103,7 +148,7 @@
           </div>
 
           <div class="social-proof">
-            <div class="avatars" aria-label="Athlete avatars">
+            <div class="avatars" aria-hidden="true">
               <span>A</span>
               <span>B</span>
               <span>C</span>
@@ -115,10 +160,14 @@
         </div>
       </section>
 
-      <section id="features" class="section section-glow-bottom">
+      <section
+        id="features"
+        class="section section-glow-bottom"
+        aria-labelledby="features-title"
+      >
         <div class="container">
           <div class="section-head">
-            <h2>
+            <h2 id="features-title">
               Everything You Need to <span class="text-primary">Dominate</span>
             </h2>
             <p>
@@ -217,7 +266,11 @@
         </div>
       </section>
 
-      <section id="leaderboard" class="section">
+      <section
+        id="leaderboard"
+        class="section"
+        aria-labelledby="leaderboard-title"
+      >
         <div class="container split">
           <div>
             <div class="section-badge">
@@ -228,7 +281,9 @@
               ></i>
               Competition Mode
             </div>
-            <h2>Rise Through the <span class="text-primary">Ranks</span></h2>
+            <h2 id="leaderboard-title">
+              Rise Through the <span class="text-primary">Ranks</span>
+            </h2>
             <p class="lead">
               Nothing motivates like a little friendly competition. See how you
               stack up against friends on daily, weekly, and monthly
@@ -254,7 +309,7 @@
               </h3>
               <span class="tag">Live</span>
             </div>
-            <ul class="leaderboard-list">
+            <ol class="leaderboard-list" aria-label="Top athletes this month">
               <li class="leader top">
                 <span class="rank">1</span>
                 <span class="avatar">AC</span>
@@ -267,7 +322,11 @@
                   <span class="sub">workouts</span>
                 </span>
                 <span class="trend up" aria-label="Trending up">
-                  <i data-lucide="trending-up" class="lucide-icon icon-sm"></i>
+                  <i
+                    data-lucide="trending-up"
+                    class="lucide-icon icon-sm"
+                    aria-hidden="true"
+                  ></i>
                 </span>
               </li>
               <li class="leader silver">
@@ -282,7 +341,11 @@
                   <span class="sub">workouts</span>
                 </span>
                 <span class="trend up" aria-label="Trending up">
-                  <i data-lucide="trending-up" class="lucide-icon icon-sm"></i>
+                  <i
+                    data-lucide="trending-up"
+                    class="lucide-icon icon-sm"
+                    aria-hidden="true"
+                  ></i>
                 </span>
               </li>
               <li class="leader bronze">
@@ -297,7 +360,11 @@
                   <span class="sub">workouts</span>
                 </span>
                 <span class="trend same" aria-label="No change">
-                  <i data-lucide="minus" class="lucide-icon icon-sm"></i>
+                  <i
+                    data-lucide="minus"
+                    class="lucide-icon icon-sm"
+                    aria-hidden="true"
+                  ></i>
                 </span>
               </li>
               <li class="leader">
@@ -315,6 +382,7 @@
                   <i
                     data-lucide="trending-down"
                     class="lucide-icon icon-sm"
+                    aria-hidden="true"
                   ></i>
                 </span>
               </li>
@@ -330,15 +398,23 @@
                   <span class="sub">workouts</span>
                 </span>
                 <span class="trend up" aria-label="Trending up">
-                  <i data-lucide="trending-up" class="lucide-icon icon-sm"></i>
+                  <i
+                    data-lucide="trending-up"
+                    class="lucide-icon icon-sm"
+                    aria-hidden="true"
+                  ></i>
                 </span>
               </li>
-            </ul>
+            </ol>
           </aside>
         </div>
       </section>
 
-      <section id="workouts" class="section section-glow-center">
+      <section
+        id="workouts"
+        class="section section-glow-center"
+        aria-labelledby="workouts-title"
+      >
         <div class="container">
           <div class="section-head">
             <div class="section-badge">
@@ -349,7 +425,9 @@
               ></i>
               Workout Logging
             </div>
-            <h2>Log Your <span class="text-primary">Workouts</span></h2>
+            <h2 id="workouts-title">
+              Log Your <span class="text-primary">Workouts</span>
+            </h2>
             <p>
               Create custom workout plans or use templates. Track every set,
               rep, and weight to see your progress over time.
@@ -365,7 +443,16 @@
               <div class="progress-meta">
                 <span>3 of 5 exercises</span><span>60%</span>
               </div>
-              <div class="progress-bar"><span style="width: 60%"></span></div>
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-label="Workout completion"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-valuenow="60"
+              >
+                <span style="width: 60%"></span>
+              </div>
               <ul class="exercise-list">
                 <li class="done">
                   <div class="exercise-head">
@@ -510,7 +597,11 @@
         </div>
       </section>
 
-      <section id="pricing" class="section cta section-glow-center">
+      <section
+        id="pricing"
+        class="section cta section-glow-center"
+        aria-labelledby="cta-title"
+      >
         <div class="container cta-wrap">
           <div class="pill cta-badge">
             <i
@@ -520,7 +611,7 @@
             ></i>
             Free to download
           </div>
-          <h2 class="cta-title">
+          <h2 id="cta-title" class="cta-title">
             Ready to Join the <span class="text-primary">Battle</span>?
           </h2>
           <p class="cta-copy">
@@ -557,7 +648,7 @@
         <div class="footer-brand">
           <a class="brand" href="#top">
             <img
-              src="public/sparta-logo.svg"
+              src="/sparta-logo.svg"
               alt="Sparta Fitness"
               width="36"
               height="36"
@@ -594,58 +685,6 @@
         <p>© 2026 Sparta Fitness. All rights reserved.</p>
       </div>
     </footer>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-      lucide.createIcons();
-
-      const siteHeader = document.querySelector(".site-header");
-      const mobileToggle = document.querySelector(".mobile-toggle");
-      const mobileMenu = document.querySelector("#mobile-menu");
-      const mobileLinks = document.querySelectorAll(".mobile-menu nav a");
-
-      if (siteHeader && mobileToggle && mobileMenu) {
-        const isDesktop = () => window.innerWidth > 940;
-
-        const closeMenu = () => {
-          siteHeader.classList.remove("is-open");
-          mobileToggle.setAttribute("aria-expanded", "false");
-        };
-
-        mobileToggle.addEventListener("click", () => {
-          const isOpen = siteHeader.classList.toggle("is-open");
-          mobileToggle.setAttribute("aria-expanded", String(isOpen));
-        });
-
-        mobileLinks.forEach((link) => {
-          link.addEventListener("click", closeMenu);
-        });
-
-        window.addEventListener("resize", () => {
-          if (isDesktop()) {
-            closeMenu();
-          }
-        });
-
-        document.addEventListener("click", (event) => {
-          if (!siteHeader.classList.contains("is-open") || isDesktop()) {
-            return;
-          }
-          const target = event.target;
-          if (!(target instanceof Node)) {
-            return;
-          }
-          if (!siteHeader.contains(target)) {
-            closeMenu();
-          }
-        });
-
-        document.addEventListener("keydown", (event) => {
-          if (event.key === "Escape") {
-            closeMenu();
-          }
-        });
-      }
-    </script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
