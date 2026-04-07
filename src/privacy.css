@@ -1,0 +1,104 @@
+@import "./shared.css";
+
+.privacy-hero-content {
+  max-width: 760px;
+}
+
+.privacy-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.privacy-summary {
+  position: sticky;
+  top: 92px;
+}
+
+.privacy-summary h2 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.privacy-summary p {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.privacy-summary ul {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.privacy-policy {
+  padding: 28px;
+}
+
+.privacy-copy {
+  max-width: 760px;
+}
+
+.privacy-copy h3 {
+  margin: 0 0 12px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.privacy-copy h3:not(:first-child) {
+  margin-top: 28px;
+}
+
+.privacy-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.privacy-copy p + p {
+  margin-top: 14px;
+}
+
+.privacy-copy ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+}
+
+.privacy-copy ul + p,
+.privacy-copy ul + h3 {
+  margin-top: 18px;
+}
+
+.privacy-copy strong {
+  color: var(--foreground);
+  font-weight: 700;
+}
+
+.privacy-copy a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 1023px) {
+  .privacy-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .privacy-summary {
+    position: static;
+  }
+}
